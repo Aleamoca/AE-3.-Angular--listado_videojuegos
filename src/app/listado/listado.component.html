@@ -1,0 +1,11 @@
+<p>listado works!</p>
+<div>
+    <h2>Listado de Videojuegos</h2>
+    <ul>
+      <li *ngFor="let videojuego of videojuegos">
+        <a [routerLink]="['/detalle', videojuego.id]">
+          {{ videojuego.id }} - {{ videojuego.titulo }} - {{ videojuego.valoracion }} estrellas
+        </a>
+      </li>
+    </ul>
+  </div>

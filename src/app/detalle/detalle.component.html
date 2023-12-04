@@ -1,0 +1,13 @@
+
+
+<div *ngIf="videojuego">
+    <h2>Detalles de {{ videojuego.titulo }}</h2>
+    <div>
+      <img [src]="videojuego.imagen" alt="{{ videojuego.titulo }}"/>
+      <p>Compañía: {{ videojuego.compania }}</p>
+      <p>Valoración: {{ videojuego.valoracion }} estrellas</p>
+
+    </div>
+    <button routerLink="/">Volver</button>
+  </div>
+  
